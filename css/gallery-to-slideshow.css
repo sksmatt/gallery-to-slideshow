@@ -1,0 +1,167 @@
+/**
+ * Gallery To Slideshow CSS
+ *
+ * @package  Gallery To Slideshow
+ * @author   Matt Varone
+ */
+/* =Wrapper
+-------------------------------------------------------------- */
+div.gallery-to-slideshow-wrapper {
+	width: 90%;
+	border: 1px solid #D2D6DB;
+	overflow: hidden;
+	padding: 1em 1em 0;
+	margin: 0 auto 2.5em auto;
+	position: relative;
+	background: #fdfdfd;
+	clear: both;
+	display: block;
+	border-top-right-radius: 1em;
+	-moz-border-radius-topright: 1em;
+	-webkit-border-top-right-radius: 1em;
+	border-top-left-radius: 1em;
+	-moz-border-radius-topleft: 1em;
+	-webkit-border-top-left-radius: 1em;
+}
+/* =Header
+-------------------------------------------------------------- */
+.gallery-to-slideshow-header {
+	overflow: hidden;
+	padding: 1em;
+	margin: 0 auto 1em;
+	clear: both;
+	display: block;
+	font: bold 0.9em georgia, verdana, arial;
+	text-transform: uppercase;
+	letter-spacing: 0.17em;
+	text-indent: 0;
+	text-shadow: #fff 0 1px;
+}
+.gallery-to-slideshow-title {
+	width:40%;
+	float: left;
+	clear: none;
+	text-align:left;
+}
+.gallery-to-slideshow-caption {
+	width:60%;
+	float: right;
+	clear: none;
+	text-align:right;
+}
+.gallery-to-slideshow-title, .gallery-to-slideshow-caption {
+	margin-bottom: 0;
+}
+/* =Slides
+-------------------------------------------------------------- */
+.flex-container a:active,
+.gallery-to-slideshow a:active {
+	outline: none;
+}
+.gallery-to-slideshow .slides {
+	margin: 0; padding: 0; 
+	list-style: none;
+} 
+.gallery-to-slideshow {
+	width: 90%; 
+	margin: 0 auto; 
+	padding: 0;
+}
+.gallery-to-slideshow .slides > li {
+	display: none;
+}
+.gallery-to-slideshow .slides img {
+	max-width: 100%; 
+	display: block; 
+	height:auto;
+	margin:0 auto;
+}
+.gallery-to-slideshow  .slides:after { 
+	content: "."; 
+	display: block; 
+	clear: both; 
+	visibility: hidden; 
+	line-height: 0; 
+	height: 0;
+} 
+html[xmlns] .gallery-to-slideshow .slides {
+	display: block;
+} 
+* html .gallery-to-slideshow  .slides {
+	height: 1%;
+	}
+.no-js .gallery-to-slideshow  .slides > li:first-child {
+	display: block;
+}
+/* =Pager
+-------------------------------------------------------------- */
+.gallery-to-slideshow .pager {
+	text-align: center;
+	margin: 1em auto 0;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+}
+.gallery-to-slideshow .pager li {
+	display: inline-block;
+	margin-bottom:1em;
+	vertical-align:top;
+}
+.gallery-to-slideshow .pager li a {
+	background: white;
+	border: 1px solid #c8cdd3;
+	display: block;
+	height: 2.9em;
+	width: 3em;
+	margin-right: 0.5em;
+	opacity: 0.5;
+	padding: 0.4em;
+	overflow:hidden;
+}
+.gallery-to-slideshow .pager li a img {
+	width: 3em;
+	height: 2.9em;
+}
+.gallery-to-slideshow .pager li.active a {
+	opacity: 1;
+	border-color: lightgrey;
+}
+/* =Captions
+-------------------------------------------------------------- */
+.gallery-to-slideshow .slides{
+	zoom: 1; 
+	position: relative;
+}
+.gallery-to-slideshow .flex-caption {
+	width: 100%;
+	padding: 3% 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #fff;
+	text-shadow: 0 -1px 0 #666;
+	font-size:0.9em;
+	margin-bottom: 0 !important;
+	background: #242424;
+	background: -moz-linear-gradient(top, #242424 0%, #0b0b0b 17%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#242424), color-stop(17%,#0b0b0b));
+	background: -webkit-linear-gradient(top, #242424 0%,#0b0b0b 17%);
+	background: -o-linear-gradient(top, #242424 0%,#0b0b0b 17%);
+	background: -ms-linear-gradient(top, #242424 0%,#0b0b0b 17%);
+	background: linear-gradient(top, #242424 0%,#0b0b0b 17%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#242424', endColorstr='#0b0b0b',GradientType=0 );
+}
+.gallery-to-slideshow .flex-caption span {
+  padding: 0 2%;
+}
+/* =Small
+-------------------------------------------------------------- */
+@media ( max-width: 959px ) {
+	.gallery-to-slideshow-title {
+		width: 100%;
+		text-align: center;
+		}
+	.gallery-to-slideshow-caption {
+		display: none;
+		}
+}
