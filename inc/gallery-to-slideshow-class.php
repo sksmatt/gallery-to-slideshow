@@ -59,7 +59,8 @@ if ( ! class_exists( 'MV_Gallery_To_Slideshow' ) ) {
 		        return $posts;
 		
 		    foreach ( $posts as $post ) {
-				if ( stripos( $post->post_content, '[gallery' ) >= 0 ) {
+				$pos = strstr( $post->post_content, '[gallery' );
+    			if ( false !== $pos && $pos >= 0 ) {
 		            $this->has_gallery = true;
 		           	break;
 				}
@@ -117,9 +118,9 @@ if ( ! class_exists( 'MV_Gallery_To_Slideshow' ) ) {
 		*/
 		
 		function enqueue_script() {
-			wp_register_script( 'flexslider', plugin_dir_url( dirname( __FILE__ ) ) . '/js/libs/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '1.8', true );
+			wp_register_script( 'flexslider', plugin_dir_url( dirname( __FILE__ ) ) . 'js/libs/flexslider/jquery.flexslider-min.js', array( 'jquery' ), '1.8', true );
 			$env = ( WP_DEBUG ) ? 'dev' : 'min';
-			wp_enqueue_script( 'gallery-to-slideshow', plugin_dir_url( dirname( __FILE__ ) ) . '/js/gallery.to.slideshow.' . $env . '.js', array( 'jquery', 'flexslider' ), MV_GALLERY_TO_SLIDESHOW_VERSION, true );				
+			wp_enqueue_script( 'gallery-to-slideshow', plugin_dir_url( dirname( __FILE__ ) ) . 'js/gallery.to.slideshow.' . $env . '.js', array( 'jquery', 'flexslider' ), MV_GALLERY_TO_SLIDESHOW_VERSION, true );				
 		}
 		
 		/** 
