@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Gallery To Slideshow\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-06-21 09:47-0300\n"
-"PO-Revision-Date: 2012-06-21 09:47-0300\n"
+"PO-Revision-Date: 2012-06-21 09:48-0300\n"
 "Last-Translator: Matt Varone <plugins@mattvarone.com>\n"
 "Language-Team: Matt Varone <contact@mattvarone.com>\n"
 "MIME-Version: 1.0\n"
@@ -16,22 +16,22 @@ msgstr ""
 
 #: inc/gallery-to-slideshow-class.php:163
 msgid "Previous"
-msgstr ""
+msgstr "Anterior"
 
 #: inc/gallery-to-slideshow-class.php:164
 msgid "Next"
-msgstr ""
+msgstr "Siguiente"
 
 #: inc/gallery-to-slideshow-class.php:165
 msgid "Pause"
-msgstr ""
+msgstr "Pausa"
 
 #: inc/gallery-to-slideshow-class.php:240
 msgid "Picture Gallery"
-msgstr ""
+msgstr "Galería"
 
 #: inc/gallery-to-slideshow-class.php:270
 #, php-format
 msgid "Permalink to %s"
-msgstr ""
+msgstr "Enlace Permanente a %"
 

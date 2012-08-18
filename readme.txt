@@ -2,18 +2,15 @@
 Contributors: sksmatt
 Donate link: http://www.mattvarone.com/donate
 Tags: Slideshow, Responsive, jQuery, Gallery, Shortcode, FlexSlider, Thumbnails
-Requires at least: 3.2
-Tested up to: 3.3.1
-Stable tag: 1.4.1
+Requires at least: 3.4
+Tested up to: 3.4.1
+Stable tag: 1.4.6
 
 Converts WordPress built-in gallery into a Responsive jQuery SlideShow.
 
 == Description ==
 
-This plugin for WordPress converts the built in gallery into a simple and responsive slideshow. It uses the FlexSlider jQuery image slider, and requires zero configuration from the user.
-
-FlexSlider:  
-http://flex.madebymufffin.com/
+This plugin for WordPress converts the built in gallery into a simple and responsive slideshow. It uses the [FlexSlider jQuery image slider](http://flexslider.woothemes.com/ "FlexSlider jQuery image slider"), and requires zero configuration from the user.
 
 If you need to modify the CSS style of Gallery To Slideshow, you can copy the 'gallery-to-slideshow.css' file from the plugin directory to your theme’s directory and make your modifications there. This way, you won’t lose your changes when you update the plugin. You can also specify an alternative CSS route, or prevent loading the extra CSS hooking to the 'mv_gallery_to_slideshow_enqueue_style' filter.
 
@@ -22,12 +19,15 @@ If you need to modify the CSS style of Gallery To Slideshow, you can copy the 'g
 * Ready for internationalization.
 * Languages: English, Spanish.
 
+Would you like to help translate the plugin into more languages? [Contact Matt](http://www.mattvarone.com/contact/ "Contact Matt").
+
 == Installation ==
 
 1. Unzip files.
 2. Upload "mv-gallery-to-slideshow" folder into your plugins directory.
 3. Activate the plugin.
-4. Have fun!
+4. [Learn how to make a gallery.](http://en.support.wordpress.com/images/gallery/ "Learn to make a gallery")
+5. Have fun!
 
 == Screenshots ==
 
@@ -35,6 +35,33 @@ If you need to modify the CSS style of Gallery To Slideshow, you can copy the 'g
 2. On a smaller screen.
 
 == Change log ==
+
+= 1.4.6 =
+* Fixes problem with link="" options
+
+= 1.4.5.1 =
+* Updates FlexSlider to version 2
+
+= 1.4.5 =
+* JS bug fix.
+* Adds "post" link option to the shortcode: ( link="file" / link="attachment" / link="false" / link="post" )
+
+= 1.4.4.1 =
+* Fixes links on images.
+
+= 1.4.4 = 
+* Added hook to load the gallery scripts manually: 'mv_gallery_to_slideshow_has_gallery' ( return true to load ).
+* Added hook to modify the following FlexSlider params: 'slideshow', 'slideshowSpeed', 'animationDuration', 'mousewheel', 'controlNav', 'keyboardNav', 'directionNav', 'manualControls', 'thumbnails', 'prevText', 'nextText', 'pausePlay', 'pauseText', 'randomize', 'slideToStart', 'animationLoop', 'pauseOnAction', 'pauseOnHover', 'controlsContainer'.
+* Fixed internationalization issues.
+* Code improvements.
+
+= 1.4.3 = 
+* Prevents error notices on themes that don't support post-thumbs.
+
+= 1.4.2 =
+* Improved shortcode checking.
+* Fixed issue with JS path slashes.
+* Shortcode attribute to enable/disable captions="1" / captions="0"  ( 1 by default ).
 
 = 1.4.1 =
 * Fixed child themes compatibility.
